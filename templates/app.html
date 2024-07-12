@@ -40,8 +40,9 @@
     </div>
     <script>
         const apiKey = "{{ api_key }}";
-        const all_src = "https://maps.googleapis.com/maps/api/js?key=" + apiKey + "&libraries=places";
-        console.log("all_src: ", all_src);
+        console.log("apiKey:", apiKey);
+        const all_src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places`;
+        console.log("all_src:", all_src);
     
         const script = document.createElement('script');
         script.src = all_src;
